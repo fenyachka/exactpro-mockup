@@ -1,0 +1,22 @@
+.breadcrumb {
+    &-item {
+        font-size: 0.83rem;
+        &::before{
+            // content: '>';
+        }
+        a{
+            color: $blue;
+            &:hover{
+                color: #aaa;
+                text-decoration: none;
+            }
+        }
+    }
+    .active{
+        color: #aaa;
+    }
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: '>';
+    color: #dedede;
+}

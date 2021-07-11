@@ -1,0 +1,18 @@
+/*--------------- ---- Responsive --------------------------*/
+
+$laptop: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199.98px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991.98px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767.98px)";
+$xs: "(max-width: 575.98px)";
+
+$tab: "(max-width:991.98px)";
+
+
+
+/*------------------- Colors -------------------------------*/
+$blue:#223244;
+$blue-dark:#223144;
+$blue-dark--2: #1e2736;
+$turquoise: rgb(63, 152, 160);
+$turquoise-light: #65acb2;

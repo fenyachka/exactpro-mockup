@@ -1,0 +1,113 @@
+.footer {
+    background-color: $blue-dark--2;
+    &__logo {
+        display: block;
+        width: 75%;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 991px) {
+            margin: 0 auto;
+        }
+    }
+    &__title-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &::after {
+            display: block;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background: $turquoise;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @media screen and (max-width: 991px) {
+                left: 50%;
+                margin-left: -25px;
+            }
+        }
+    }
+    &__list {
+        font-size: 0.9rem;
+        li {
+            padding-bottom: 0.4rem;
+        }
+    }
+    h3 {
+        font-size: 1.38rem;
+    }
+
+    .social-button {
+        display: flex;
+        width: 36px;
+        height: 36px;
+        transition: all 0.3s ease;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            text-decoration: none;
+        }
+
+        @media #{$md} {
+            width: 30px;
+            height: 30px;
+        }
+
+        i {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        &_github {
+            background: #464f59;
+            &:hover {
+                background: #24292e;
+            }
+        }
+        &_facebook {
+            background: #777;
+            &:hover {
+                background: #507cbe;
+            }
+        }
+        &_twitter {
+            background: #b9b9b9;
+            &:hover {
+                background: #63cdf1;
+            }
+        }
+        &_linkedin {
+            background: #bfbfbf;
+            &:hover {
+                background: #90cadd;
+            }
+        }
+        &_youtube {
+            background: #808080;
+            &:hover {
+                background: #f16261;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        text-align: center !important;
+    }
+}
+.copyright {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0 100px;
+    letter-spacing: 1px;
+    @media screen and (max-width: 991px) {
+        padding: 0 0;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            color: #777;
+        }
+    }
+}

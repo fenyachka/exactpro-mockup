@@ -1,0 +1,41 @@
+.btn-main {
+    background-color: $turquoise;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background-color: $turquoise-light;
+    }
+}
+
+#backToTop {
+    display: inline-block;
+    background-color: rgba(88, 88, 88, 1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(88, 88, 88, .75);
+    }
+    &:active {
+        background-color: rgba(88, 88, 88, 1);
+    }
+    &.show {
+        opacity: 0.75;
+        visibility: visible;
+    }
+    i{
+        color: #fff;
+        padding-top: 26px;
+        font-size: 21px;
+    }
+
+}
